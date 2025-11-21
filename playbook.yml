@@ -1,0 +1,51 @@
+name: Install and configure auditd
+hosts: localhost
+become: yes
+
+tasks:
+
+  -name: Install auditd
+  apt:
+    name: auditd
+     state: present
+        update_cache: yes
+
+    - name: Ensure auditd service is enabled and running
+      service:
+        name: auditd
+        state: started
+        enabled: yes
+
+    - name: Copy auditd.conf
+      copy:
+        src: files/auditd.conf
+        dest: /etc/audit/auditd.conf
+        owner: root
+        group: root
+        mode: '0644'
+
+    - name: Deploy audit rules
+      copy:
+        src: audit.rules
+        dest: /etc/audit/rules.d/audit.rules
+        owner: root
+        group: root
+        mode: '0640'
+
+    - name: Restart auditd to apply rules
+      service:
+        name: auditd
+        state: restarted
+
+    - name: Deploy rsyslog config
+      template:
+        src: templates/rsyslog.conf.j2
+        dest: /etc/rsyslog.conf
+      notify: restart rsyslog
+
+  handlers:
+    - name: restart rsyslog
+      service:
+        name: rsyslog
+        state: restarted
+
