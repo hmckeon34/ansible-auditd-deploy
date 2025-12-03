@@ -8,11 +8,10 @@ Auditd is important because it:
 - Supports compliance frameworks such as PCI-DSS, HIPAA, and CJIS 
 
  System Requirements
-| Component | Requirement |
-|----------|-------------|
-| Operating System | Ubuntu 24.x LTS |
-| Ansible Version | ansible-core 2.15+ |
-| Required Packages | git, ansible, auditd, python3 |
+ Component  Requirement 
+ Operating System    Ubuntu 24.x LTS
+ Ansible Version    ansible-core 2.15+
+ Required Packages  git, ansible, auditd, python3
 
      +----------------------+
      |      GitHub Repo     |
