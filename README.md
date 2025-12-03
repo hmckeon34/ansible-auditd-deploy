@@ -37,3 +37,22 @@ This repository contains an Ansible playbook designed to deploy a hardened audit
      +-----------------------------+
      |  /var/log/audit/audit.log   |
      +-----------------------------+
+
+
+     ansible-auditd-deploy/
+
+Repository Structure
+├── playbook.yml           # Main Ansible playbook
+├── auditd.conf            # Audit daemon configuration
+├── audit.rules            # Custom audit rule set
+├── rsyslog.conf           # Logging configuration (if modified)
+├── audit.log              # Sample audit log for review
+└── README.md              # Documentation
+
+
+## How to Use This Repository
+
+### Run ansible-pull on the target VM
+Use the following command:
+
+sudo ansible-pull -U https://github.com/hmckeon34/ansible-auditd-deploy.git playbook.yml
