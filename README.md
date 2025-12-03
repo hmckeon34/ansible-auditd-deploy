@@ -56,3 +56,17 @@ Repository Structure
 Use the following command:
 
 sudo ansible-pull -U https://github.com/hmckeon34/ansible-auditd-deploy.git playbook.yml
+
+Whenever you update your GitHub repo:
+
+git add .
+git commit -m "Update config"
+git push
+
+Trigger a manual pull:
+ansible-pull -U <repo-url> auditd.yml
+
+
+Audit logs are stored at:
+
+/var/log/audit/audit.log
