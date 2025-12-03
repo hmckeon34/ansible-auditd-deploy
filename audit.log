@@ -1,0 +1,726 @@
+type=DAEMON_START msg=audit(1763698416.468:5462): op=start ver=3.1.2 format=enriched kernel=6.8.0-88-generic auid=4294967295 pid=10522 uid=0 ses=4294967295 subj=unconfined  res=successAUID="unset" UID="root"
+type=CONFIG_CHANGE msg=audit(1763698416.493:295): op=set audit_backlog_limit=8192 old=64 auid=4294967295 ses=4294967295 subj=unconfined res=1AUID="unset"
+type=SYSCALL msg=audit(1763698416.493:295): arch=c000003e syscall=44 success=yes exit=60 a0=3 a1=7ffdfdecefb0 a2=3c a3=0 items=0 ppid=10527 pid=10541 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=PROCTITLE msg=audit(1763698416.493:295): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=CONFIG_CHANGE msg=audit(1763698416.493:296): op=set audit_failure=1 old=1 auid=4294967295 ses=4294967295 subj=unconfined res=1AUID="unset"
+type=SYSCALL msg=audit(1763698416.493:296): arch=c000003e syscall=44 success=yes exit=60 a0=3 a1=7ffdfdecefb0 a2=3c a3=0 items=0 ppid=10527 pid=10541 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=PROCTITLE msg=audit(1763698416.493:296): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=CONFIG_CHANGE msg=audit(1763698416.494:297): op=set audit_backlog_wait_time=60000 old=60000 auid=4294967295 ses=4294967295 subj=unconfined res=1AUID="unset"
+type=SYSCALL msg=audit(1763698416.494:297): arch=c000003e syscall=44 success=yes exit=60 a0=3 a1=7ffdfdecefb0 a2=3c a3=0 items=0 ppid=10527 pid=10541 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)ARCH=x86_64 SYSCALL=sendto AUID="unset" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=PROCTITLE msg=audit(1763698416.494:297): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SERVICE_START msg=audit(1763698416.496:298): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=auditd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'UID="root" AUID="unset"
+type=SERVICE_START msg=audit(1763698416.540:299): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fwupd-refresh comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'UID="root" AUID="unset"
+type=SERVICE_STOP msg=audit(1763698416.540:300): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fwupd-refresh comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'UID="root" AUID="unset"
+type=USER_END msg=audit(1763698420.549:301): pid=9828 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=CRED_DISP msg=audit(1763698420.549:302): pid=9828 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_ACCT msg=audit(1763698420.844:303): pid=10638 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_CMD msg=audit(1763698420.844:304): pid=10638 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D6E726A69747A756974706A656967636F7976797371696A616364626868716763203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432302E353838363537362D31303631392D39313136393533373230373930342F416E736962616C6C5A5F73797374656D642E7079 exe="/usr/bin/sudo" terminal=? res=success'UID="admin1" AUID="admin1"
+type=CRED_REFR msg=audit(1763698420.845:305): pid=10638 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_START msg=audit(1763698420.845:306): pid=10638 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_END msg=audit(1763698421.215:307): pid=10638 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=CRED_DISP msg=audit(1763698421.215:308): pid=10638 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_ACCT msg=audit(1763698421.383:309): pid=10668 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_CMD msg=audit(1763698421.383:310): pid=10668 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D756B72776F72666D6278706D6E736862686465746569667A617665656B636B6C203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432312E3235333931332D31303634392D383431343638333434383531382F416E736962616C6C5A5F737461742E7079 exe="/usr/bin/sudo" terminal=? res=success'UID="admin1" AUID="admin1"
+type=CRED_REFR msg=audit(1763698421.384:311): pid=10668 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_START msg=audit(1763698421.384:312): pid=10668 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_END msg=audit(1763698421.592:313): pid=10668 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=CRED_DISP msg=audit(1763698421.592:314): pid=10668 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_ACCT msg=audit(1763698421.729:315): pid=10685 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_CMD msg=audit(1763698421.730:316): pid=10685 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D6A6175717465716475666B6E6A686863646676786E64796571796E646B677465203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432312E3235333931332D31303634392D383431343638333434383531382F416E736962616C6C5A5F636F70792E7079 exe="/usr/bin/sudo" terminal=? res=success'UID="admin1" AUID="admin1"
+type=CRED_REFR msg=audit(1763698421.730:317): pid=10685 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_START msg=audit(1763698421.731:318): pid=10685 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_END msg=audit(1763698421.918:319): pid=10685 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=CRED_DISP msg=audit(1763698421.918:320): pid=10685 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_ACCT msg=audit(1763698421.973:321): pid=10713 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_CMD msg=audit(1763698421.974:322): pid=10713 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D656B756C6A636C6B7678766F776C64756E717068646176617179747673786461203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432312E393532323331342D31303639342D38303136333130333233363834302F416E736962616C6C5A5F737461742E7079 exe="/usr/bin/sudo" terminal=? res=success'UID="admin1" AUID="admin1"
+type=CRED_REFR msg=audit(1763698421.974:323): pid=10713 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_START msg=audit(1763698421.975:324): pid=10713 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_END msg=audit(1763698422.182:325): pid=10713 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=CRED_DISP msg=audit(1763698422.182:326): pid=10713 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_ACCT msg=audit(1763698422.206:327): pid=10730 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_CMD msg=audit(1763698422.206:328): pid=10730 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D627174686266766B72786767666C696E6E7366736F707970707269717A776362203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432312E393532323331342D31303639342D38303136333130333233363834302F416E736962616C6C5A5F636F70792E7079 exe="/usr/bin/sudo" terminal=? res=success'UID="admin1" AUID="admin1"
+type=CRED_REFR msg=audit(1763698422.207:329): pid=10730 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_START msg=audit(1763698422.207:330): pid=10730 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_END msg=audit(1763698422.400:331): pid=10730 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=CRED_DISP msg=audit(1763698422.400:332): pid=10730 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_ACCT msg=audit(1763698422.459:333): pid=10758 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_CMD msg=audit(1763698422.459:334): pid=10758 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D6471656D6E6A706D6D766364687764686B6778717368687A7A64626767717A6E203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432322E343336383238392D31303733392D3132323236303731373739313837392F416E736962616C6C5A5F73797374656D642E7079 exe="/usr/bin/sudo" terminal=? res=success'UID="admin1" AUID="admin1"
+type=CRED_REFR msg=audit(1763698422.460:335): pid=10758 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=USER_START msg=audit(1763698422.460:336): pid=10758 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'UID="admin1" AUID="admin1"
+type=DAEMON_END msg=audit(1763698422.803:5463): op=terminate auid=0 uid=0 ses=4294967295 pid=1 subj=unconfined res=successAUID="root" UID="root"
+type=DAEMON_START msg=audit(1763698422.873:6948): op=start ver=3.1.2 format=raw kernel=6.8.0-88-generic auid=4294967295 pid=10767 uid=0 ses=4294967295 subj=unconfined  res=success
+type=SYSCALL msg=audit(1763698422.872:340): arch=c000003e syscall=44 success=yes exit=60 a0=3 a1=7fffedc02140 a2=3c a3=0 items=0 ppid=10765 pid=10767 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditd" exe="/usr/sbin/auditd" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763698422.872:340): proctitle="/sbin/auditd"
+type=CONFIG_CHANGE msg=audit(1763698422.902:341): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="passwd_changes" list=4 res=1
+type=SYSCALL msg=audit(1763698422.902:341): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7ffcc5c2c470 a2=43c a3=0 items=0 ppid=10771 pid=10784 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763698422.902:341): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=CONFIG_CHANGE msg=audit(1763698422.902:342): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="shadow_changes" list=4 res=1
+type=SYSCALL msg=audit(1763698422.902:342): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7ffcc5c2c470 a2=43c a3=0 items=1 ppid=10771 pid=10784 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=SOCKADDR msg=audit(1763698422.902:342): saddr=100000000000000000000000
+type=CWD msg=audit(1763698422.902:342): cwd="/"
+type=PATH msg=audit(1763698422.902:342): item=0 name="/etc/" inode=262145 dev=fc:00 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1763698422.902:342): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=CONFIG_CHANGE msg=audit(1763698422.902:343): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="auth_logs" list=4 res=1
+type=SYSCALL msg=audit(1763698422.902:343): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7ffcc5c2c470 a2=43c a3=0 items=1 ppid=10771 pid=10784 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=SOCKADDR msg=audit(1763698422.902:343): saddr=100000000000000000000000
+type=CWD msg=audit(1763698422.902:343): cwd="/"
+type=PATH msg=audit(1763698422.902:343): item=0 name="/var/log/" inode=1310729 dev=fc:00 mode=040775 ouid=0 ogid=104 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1763698422.902:343): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=CONFIG_CHANGE msg=audit(1763698422.902:344): op=set audit_enabled=1 old=1 auid=4294967295 ses=4294967295 subj=unconfined res=1
+type=SYSCALL msg=audit(1763698422.902:344): arch=c000003e syscall=44 success=yes exit=60 a0=3 a1=7ffcc5c2c3b0 a2=3c a3=0 items=0 ppid=10771 pid=10784 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=SOCKADDR msg=audit(1763698422.902:344): saddr=100000000000000000000000
+type=PROCTITLE msg=audit(1763698422.902:344): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SERVICE_START msg=audit(1763698422.904:345): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=auditd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_END msg=audit(1763698422.936:346): pid=10758 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763698422.936:347): pid=10758 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1763698423.009:348): pid=10812 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763698423.010:349): pid=10812 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D61697773797374646378766E7A717A717A7A6E767078776F72646E7861697972203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432322E393736363539332D31303739332D3234333435373730353538303735352F416E736962616C6C5A5F737461742E7079 exe="/usr/bin/sudo" terminal=? res=success'
+type=CRED_REFR msg=audit(1763698423.011:350): pid=10812 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763698423.011:351): pid=10812 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1763698423.225:352): pid=10812 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763698423.226:353): pid=10812 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1763698423.249:354): pid=10829 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763698423.249:355): pid=10829 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D6D646B767865746A6369797579616B6E7A6D6B6E6B7064767477726172647069203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432322E393736363539332D31303739332D3234333435373730353538303735352F416E736962616C6C5A5F636F70792E7079 exe="/usr/bin/sudo" terminal=? res=success'
+type=CRED_REFR msg=audit(1763698423.250:356): pid=10829 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763698423.250:357): pid=10829 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1763698423.445:358): pid=10829 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763698423.445:359): pid=10829 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1763698423.515:360): pid=10857 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763698423.516:361): pid=10857 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=2F62696E2F7368202D63206563686F204245434F4D452D535543434553532D6C6673766D66796F707069717761766C6C646D74716D676B6F64796F73626569203B202F7573722F62696E2F707974686F6E33202F686F6D652F61646D696E312F2E616E7369626C652F746D702F616E7369626C652D746D702D313736333639383432332E343933343535342D31303833382D38313437353331383731363439342F416E736962616C6C5A5F73797374656D642E7079 exe="/usr/bin/sudo" terminal=? res=success'
+type=CRED_REFR msg=audit(1763698423.516:362): pid=10857 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763698423.517:363): pid=10857 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=SERVICE_STOP msg=audit(1763698423.851:364): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=rsyslog comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=AVC msg=audit(1763698423.930:365): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=10868 comm="apparmor_parser"
+type=SYSCALL msg=audit(1763698423.930:365): arch=c000003e syscall=1 success=yes exit=48601 a0=6 a1=5e3c0f302b30 a2=bdd9 a3=0 items=0 ppid=10867 pid=10868 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763698423.930:365): proctitle=61707061726D6F725F706172736572002D72002D57002D54002F6574632F61707061726D6F722E642F7573722E7362696E2E727379736C6F6764
+type=AVC msg=audit(1763698423.965:366): apparmor="DENIED" operation="capable" class="cap" profile="rsyslogd" pid=10870 comm="rsyslogd" capability=12  capname="net_admin"
+type=SYSCALL msg=audit(1763698423.965:366): arch=c000003e syscall=54 success=no exit=-1 a0=6 a1=1 a2=20 a3=7fffc3dd20a4 items=0 ppid=1 pid=10870 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="rsyslogd" exe="/usr/sbin/rsyslogd" subj=rsyslogd key=(null)
+type=PROCTITLE msg=audit(1763698423.965:366): proctitle=2F7573722F7362696E2F727379736C6F6764002D6E002D694E4F4E45
+type=SERVICE_START msg=audit(1763698423.965:367): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=rsyslog comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_END msg=audit(1763698423.994:368): pid=10857 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763698423.995:369): pid=10857 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1763698501.996:370): pid=10905 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1763698501.997:371): pid=10905 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1763698501.997:372): pid=10905 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=17 res=1
+type=SYSCALL msg=audit(1763698501.997:372): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffef849c4b0 a2=1 a3=0 items=0 ppid=1192 pid=10905 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=17 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763698501.997:372): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1763698501.998:373): pid=10905 uid=0 auid=0 ses=17 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1763698502.000:374): pid=10906 uid=0 auid=0 ses=17 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1763698502.012:375): pid=10905 uid=0 auid=0 ses=17 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1763698502.012:376): pid=10905 uid=0 auid=0 ses=17 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_AUTH msg=audit(1763698620.155:377): pid=10980 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:authentication grantors=pam_permit,pam_cap acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1763698620.155:378): pid=10980 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763698620.156:379): pid=10980 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1" cmd=6370202F6574632F61756469742F6175646974642E636F6E66202F686F6D652F61646D696E312F616E7369626C652D6175646974642D6465706C6F792F exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1763698620.156:380): pid=10980 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763698620.156:381): pid=10980 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1763698620.160:382): pid=10980 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763698620.160:383): pid=10980 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1763698621.018:384): pid=10987 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1763698621.019:385): pid=10987 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1763698621.019:386): pid=10987 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=18 res=1
+type=SYSCALL msg=audit(1763698621.019:386): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffef849c4b0 a2=1 a3=0 items=0 ppid=1192 pid=10987 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=18 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763698621.019:386): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1763698621.019:387): pid=10987 uid=0 auid=0 ses=18 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1763698621.022:388): pid=10988 uid=0 auid=0 ses=18 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1763698621.025:389): pid=10987 uid=0 auid=0 ses=18 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1763698621.025:390): pid=10987 uid=0 auid=0 ses=18 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_ACCT msg=audit(1763698659.062:391): pid=11001 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763698659.062:392): pid=11001 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1" cmd=6364202F686F6D652F61646D696E312F616E7369626C652D6175646974642D6465706C6F79 exe="/usr/bin/sudo" terminal=pts/0 res=failed'
+type=SERVICE_START msg=audit(1763698722.852:393): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763698724.431:394): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763698732.866:395): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1763698792.790:396): pid=11056 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763698792.791:397): pid=11056 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=6370202F7661722F6C6F672F61756469742F61756469742E6C6F67202F686F6D652F61646D696E312F616E7369626C652D6175646974642D6465706C6F792F exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1763698792.791:398): pid=11056 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763698792.792:399): pid=11056 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1763698792.799:400): pid=11056 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763698792.799:401): pid=11056 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=SERVICE_START msg=audit(1763698820.224:402): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763698820.224:403): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1763699101.032:404): pid=11149 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1763699101.033:405): pid=11149 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1763699101.033:406): pid=11149 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=19 res=1
+type=SYSCALL msg=audit(1763699101.033:406): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffef849c4b0 a2=1 a3=0 items=0 ppid=1192 pid=11149 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=19 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763699101.033:406): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1763699101.033:407): pid=11149 uid=0 auid=0 ses=19 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1763699101.035:408): pid=11150 uid=0 auid=0 ses=19 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1763699101.038:409): pid=11149 uid=0 auid=0 ses=19 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1763699101.038:410): pid=11149 uid=0 auid=0 ses=19 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_ACCT msg=audit(1763699212.714:411): pid=11183 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763699212.714:412): pid=11183 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=636174202F6574632F61756469742F6175646974642E636F6E66 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1763699212.715:413): pid=11183 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763699212.716:414): pid=11183 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1763699212.720:415): pid=11183 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763699212.721:416): pid=11183 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=SERVICE_START msg=audit(1763699410.237:417): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763699410.238:418): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1763699617.705:419): pid=11249 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763699617.706:420): pid=11249 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=7461696C202D6E203530202F7661722F6C6F672F61756469742F61756469742E6C6F67 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1763699617.707:421): pid=11249 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763699617.708:422): pid=11249 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1763699617.714:423): pid=11249 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763699617.714:424): pid=11249 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1763699701.046:425): pid=11263 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1763699701.047:426): pid=11263 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1763699701.048:427): pid=11263 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=20 res=1
+type=SYSCALL msg=audit(1763699701.048:427): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffef849c4b0 a2=1 a3=0 items=0 ppid=1192 pid=11263 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=20 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763699701.048:427): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1763699701.048:428): pid=11263 uid=0 auid=0 ses=20 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1763699701.050:429): pid=11264 uid=0 auid=0 ses=20 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1763699701.053:430): pid=11263 uid=0 auid=0 ses=20 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1763699701.054:431): pid=11263 uid=0 auid=0 ses=20 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_ACCT msg=audit(1763699723.561:432): pid=11271 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763699723.561:433): pid=11271 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=636174202F6574632F727379736C6F672E636F6E66 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1763699723.562:434): pid=11271 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763699723.563:435): pid=11271 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1763699723.566:436): pid=11271 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763699723.566:437): pid=11271 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1763699784.147:438): pid=11286 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1763699784.147:439): pid=11286 uid=1000 auid=1000 ses=3 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=636174202F6574632F61756469742F72756C65732E642F61756469742E72756C6573 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1763699784.148:440): pid=11286 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1763699784.148:441): pid=11286 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1763699784.152:442): pid=11286 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1763699784.152:443): pid=11286 uid=1000 auid=1000 ses=3 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=SERVICE_START msg=audit(1763700010.227:444): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763700010.227:445): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1763700301.059:446): pid=11371 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1763700301.060:447): pid=11371 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1763700301.060:448): pid=11371 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=21 res=1
+type=SYSCALL msg=audit(1763700301.060:448): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffef849c4b0 a2=1 a3=0 items=0 ppid=1192 pid=11371 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=21 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763700301.060:448): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1763700301.061:449): pid=11371 uid=0 auid=0 ses=21 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1763700301.063:450): pid=11372 uid=0 auid=0 ses=21 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1763700301.066:451): pid=11371 uid=0 auid=0 ses=21 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1763700301.066:452): pid=11371 uid=0 auid=0 ses=21 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=SERVICE_START msg=audit(1763700620.236:453): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763700620.236:454): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1763700801.762:455): prog-id=203 op=LOAD
+type=SERVICE_START msg=audit(1763700801.885:456): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_AUTH msg=audit(1763700804.995:457): pid=11464 uid=0 auid=1000 ses=2 subj=unconfined msg='op=PAM:authentication grantors=pam_succeed_if,pam_permit,pam_cap,pam_gnome_keyring acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=USER_ACCT msg=audit(1763700804.996:458): pid=11464 uid=0 auid=1000 ses=2 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=CRED_REFR msg=audit(1763700805.000:459): pid=11464 uid=0 auid=1000 ses=2 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap,pam_gnome_keyring acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=SERVICE_STOP msg=audit(1763700832.446:460): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1763700832.455:461): prog-id=203 op=UNLOAD
+type=USER_ACCT msg=audit(1763700901.074:462): pid=11560 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1763700901.075:463): pid=11560 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1763700901.075:464): pid=11560 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=22 res=1
+type=SYSCALL msg=audit(1763700901.075:464): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffef849c4b0 a2=1 a3=0 items=0 ppid=1192 pid=11560 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=22 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1763700901.075:464): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1763700901.076:465): pid=11560 uid=0 auid=0 ses=22 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1763700901.078:466): pid=11561 uid=0 auid=0 ses=22 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1763700901.081:467): pid=11560 uid=0 auid=0 ses=22 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1763700901.081:468): pid=11560 uid=0 auid=0 ses=22 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=BPF msg=audit(1763701150.511:469): prog-id=158 op=UNLOAD
+type=SERVICE_STOP msg=audit(1763701171.275:470): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=unattended-upgrades comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_END msg=audit(1763701171.312:471): pid=1761 uid=0 auid=1000 ses=2 subj=unconfined msg='op=PAM:session_close grantors=pam_selinux,pam_loginuid,pam_selinux,pam_keyinit,pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_systemd,pam_gnome_keyring acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty2 res=success'
+type=CRED_DISP msg=audit(1763701171.312:472): pid=1761 uid=0 auid=1000 ses=2 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_gnome_keyring acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty2 res=success'
+type=SERVICE_STOP msg=audit(1763701171.357:473): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=openvpn comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.358:474): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=plymouth-quit-wait comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.369:475): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=snapd.seeded comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.371:476): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.395:477): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=hv-kvp-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.400:478): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=hv-vss-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.403:479): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=accounts-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.405:480): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=ModemManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.418:481): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=gnome-remote-desktop comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.420:482): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=udisks2 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.421:483): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cron comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.423:484): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=rtkit-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.426:485): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=colord comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.432:486): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=upower comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.438:487): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=ubuntu-advantage-desktop-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.444:488): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=power-profiles-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.449:489): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=rsyslog comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.456:490): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=kerneloops comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1763701171.465:491): prog-id=195 op=UNLOAD
+type=BPF msg=audit(1763701171.474:492): prog-id=201 op=UNLOAD
+type=BPF msg=audit(1763701171.474:493): prog-id=200 op=UNLOAD
+type=SERVICE_STOP msg=audit(1763701171.494:494): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1763701171.502:495): prog-id=193 op=UNLOAD
+type=BPF msg=audit(1763701171.507:496): prog-id=199 op=UNLOAD
+type=SERVICE_STOP msg=audit(1763701171.535:497): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=gdm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+type=SERVICE_STOP msg=audit(1763701171.536:498): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=blk-availability comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.552:499): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=polkit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1763701171.553:500): prog-id=192 op=UNLOAD
+type=SERVICE_STOP msg=audit(1763701171.569:501): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=switcheroo-control comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.582:502): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cups-browsed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.591:503): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fwupd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.631:504): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager-wait-online comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.651:505): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=avahi-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.672:506): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cups comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701171.866:507): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=apport comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701172.174:508): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1763701172.184:509): prog-id=183 op=UNLOAD
+type=SERVICE_STOP msg=audit(1763701172.350:510): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=finalrd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701172.492:511): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701173.062:512): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-user-sessions comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701173.089:513): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=wpa_supplicant comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701173.207:514): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-networkd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1763701173.210:515): prog-id=188 op=UNLOAD
+type=SERVICE_STOP msg=audit(1763701173.212:516): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701173.215:517): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-oomd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1763701173.221:518): prog-id=196 op=UNLOAD
+type=SERVICE_STOP msg=audit(1763701173.225:519): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701174.387:520): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=snapd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701174.666:521): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-binfmt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SYSTEM_SHUTDOWN msg=audit(1763701174.679:522): pid=12358 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1763701174.838:523): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=DAEMON_END msg=audit(1763701174.841:6949): op=terminate auid=0 uid=0 ses=4294967295 pid=1 subj=unconfined res=success
+type=DAEMON_START msg=audit(1764726189.094:3301): op=start ver=3.1.2 format=raw kernel=6.8.0-88-generic auid=4294967295 pid=856 uid=0 ses=4294967295 subj=unconfined  res=success
+type=CONFIG_CHANGE msg=audit(1764726189.142:153): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="passwd_changes" list=4 res=1
+type=SYSCALL msg=audit(1764726189.142:153): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7ffea98bf4f0 a2=43c a3=0 items=0 ppid=860 pid=872 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726189.142:153): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=CONFIG_CHANGE msg=audit(1764726189.142:154): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="shadow_changes" list=4 res=1
+type=SYSCALL msg=audit(1764726189.142:154): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7ffea98bf4f0 a2=43c a3=0 items=1 ppid=860 pid=872 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=SOCKADDR msg=audit(1764726189.142:154): saddr=100000000000000000000000
+type=CWD msg=audit(1764726189.142:154): cwd="/"
+type=PATH msg=audit(1764726189.142:154): item=0 name="/etc/" inode=262145 dev=fc:00 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1764726189.142:154): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=CONFIG_CHANGE msg=audit(1764726189.142:155): auid=4294967295 ses=4294967295 subj=unconfined op=add_rule key="auth_logs" list=4 res=1
+type=SYSCALL msg=audit(1764726189.142:155): arch=c000003e syscall=44 success=yes exit=1084 a0=3 a1=7ffea98bf4f0 a2=43c a3=0 items=1 ppid=860 pid=872 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=SOCKADDR msg=audit(1764726189.142:155): saddr=100000000000000000000000
+type=CWD msg=audit(1764726189.142:155): cwd="/"
+type=PATH msg=audit(1764726189.142:155): item=0 name="/var/log/" inode=1310729 dev=fc:00 mode=040775 ouid=0 ogid=104 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1764726189.142:155): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=CONFIG_CHANGE msg=audit(1764726189.142:156): op=set audit_enabled=1 old=1 auid=4294967295 ses=4294967295 subj=unconfined res=1
+type=SYSCALL msg=audit(1764726189.142:156): arch=c000003e syscall=44 success=yes exit=60 a0=3 a1=7ffea98bf430 a2=3c a3=0 items=0 ppid=860 pid=872 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=unconfined key=(null)
+type=SOCKADDR msg=audit(1764726189.142:156): saddr=100000000000000000000000
+type=PROCTITLE msg=audit(1764726189.142:156): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+type=SERVICE_START msg=audit(1764726189.148:157): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=auditd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SYSTEM_BOOT msg=audit(1764726189.178:158): pid=876 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg=' comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.188:159): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-update-utmp comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.192:160): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-oomd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.203:161): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-timesyncd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.273:162): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-resolved comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.384:163): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=anacron comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.404:164): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=dmesg comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.464:165): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=hv-vss-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726189.480:166): prog-id=16 op=LOAD
+type=BPF msg=audit(1764726189.494:167): prog-id=17 op=LOAD
+type=BPF msg=audit(1764726189.600:168): prog-id=18 op=LOAD
+type=BPF msg=audit(1764726189.681:169): prog-id=19 op=LOAD
+type=BPF msg=audit(1764726189.683:170): prog-id=20 op=LOAD
+type=BPF msg=audit(1764726189.683:171): prog-id=21 op=LOAD
+type=BPF msg=audit(1764726189.716:172): prog-id=22 op=LOAD
+type=SERVICE_START msg=audit(1764726189.763:173): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=dbus comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.769:174): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=dpkg-db-backup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726189.769:175): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=dpkg-db-backup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.781:176): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=e2scrub_reap comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726189.781:177): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=e2scrub_reap comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.801:178): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=AVC msg=audit(1764726189.856:179): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="rsyslogd" pid=968 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726189.856:179): arch=c000003e syscall=1 success=yes exit=48601 a0=6 a1=58b75ef04560 a2=bdd9 a3=0 items=0 ppid=961 pid=968 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726189.856:179): proctitle=61707061726D6F725F706172736572002D72002D57002D54002F6574632F61707061726D6F722E642F7573722E7362696E2E727379736C6F6764
+type=SERVICE_START msg=audit(1764726189.890:180): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=gpu-manager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726189.891:181): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=gpu-manager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.893:182): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-logind comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.943:183): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=switcheroo-control comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.953:184): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=logrotate comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726189.953:185): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=logrotate comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726189.966:186): prog-id=22 op=UNLOAD
+type=SERVICE_START msg=audit(1764726189.971:187): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=avahi-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.975:188): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=wpa_supplicant comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726189.993:189): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=grub-common comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726189.993:190): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=grub-common comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=AVC msg=audit(1764726190.024:191): apparmor="DENIED" operation="capable" class="cap" profile="rsyslogd" pid=1015 comm="rsyslogd" capability=12  capname="net_admin"
+type=SYSCALL msg=audit(1764726190.024:191): arch=c000003e syscall=54 success=no exit=-1 a0=6 a1=1 a2=20 a3=7ffcefa858c4 items=0 ppid=1 pid=1015 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="rsyslogd" exe="/usr/sbin/rsyslogd" subj=rsyslogd key=(null)
+type=PROCTITLE msg=audit(1764726190.024:191): proctitle=2F7573722F7362696E2F727379736C6F6764002D6E002D694E4F4E45
+type=SERVICE_START msg=audit(1764726190.039:192): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=rsyslog comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.054:193): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=grub-initrd-fallback comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726190.056:194): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=grub-initrd-fallback comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.067:195): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=polkit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.090:196): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=accounts-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.092:197): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=power-profiles-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.109:198): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=gnome-remote-desktop comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726190.111:199): prog-id=23 op=LOAD
+type=BPF msg=audit(1764726190.111:200): prog-id=24 op=LOAD
+type=BPF msg=audit(1764726190.111:201): prog-id=25 op=LOAD
+type=SERVICE_START msg=audit(1764726190.188:202): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=udisks2 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.235:203): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.303:204): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=ModemManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.326:205): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=AVC msg=audit(1764726190.482:206): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1130 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726190.482:206): arch=c000003e syscall=1 success=yes exit=89049 a0=6 a1=5f5af7651070 a2=15bd9 a3=0 items=0 ppid=1129 pid=1130 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726190.482:206): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D2D736B
+type=AVC msg=audit(1764726190.493:207): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1130 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726190.493:207): arch=c000003e syscall=1 success=yes exit=17177 a0=6 a1=5f5af79549f0 a2=4319 a3=0 items=0 ppid=1129 pid=1130 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726190.493:207): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D2D736B
+type=SERVICE_START msg=audit(1764726190.561:208): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=snapd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726190.574:209): prog-id=26 op=LOAD
+type=BPF msg=audit(1764726190.575:210): prog-id=27 op=LOAD
+type=BPF msg=audit(1764726190.575:211): prog-id=28 op=LOAD
+type=SERVICE_START msg=audit(1764726190.647:212): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-timedated comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726190.674:213): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=snapd.seeded comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726191.145:214): prog-id=29 op=LOAD
+type=BPF msg=audit(1764726191.145:215): prog-id=11 op=UNLOAD
+type=BPF msg=audit(1764726191.145:216): prog-id=30 op=LOAD
+type=BPF msg=audit(1764726191.145:217): prog-id=31 op=LOAD
+type=BPF msg=audit(1764726191.146:218): prog-id=12 op=UNLOAD
+type=BPF msg=audit(1764726191.146:219): prog-id=13 op=UNLOAD
+type=BPF msg=audit(1764726191.147:220): prog-id=32 op=LOAD
+type=BPF msg=audit(1764726191.148:221): prog-id=14 op=UNLOAD
+type=BPF msg=audit(1764726191.148:222): prog-id=33 op=LOAD
+type=BPF msg=audit(1764726191.149:223): prog-id=23 op=UNLOAD
+type=BPF msg=audit(1764726191.149:224): prog-id=34 op=LOAD
+type=BPF msg=audit(1764726191.149:225): prog-id=35 op=LOAD
+type=BPF msg=audit(1764726191.149:226): prog-id=24 op=UNLOAD
+type=BPF msg=audit(1764726191.149:227): prog-id=25 op=UNLOAD
+type=BPF msg=audit(1764726191.152:228): prog-id=36 op=LOAD
+type=BPF msg=audit(1764726191.152:229): prog-id=5 op=UNLOAD
+type=BPF msg=audit(1764726191.153:230): prog-id=37 op=LOAD
+type=BPF msg=audit(1764726191.153:231): prog-id=38 op=LOAD
+type=BPF msg=audit(1764726191.153:232): prog-id=6 op=UNLOAD
+type=BPF msg=audit(1764726191.153:233): prog-id=7 op=UNLOAD
+type=BPF msg=audit(1764726191.158:234): prog-id=39 op=LOAD
+type=BPF msg=audit(1764726191.158:235): prog-id=17 op=UNLOAD
+type=BPF msg=audit(1764726191.160:236): prog-id=40 op=LOAD
+type=BPF msg=audit(1764726191.160:237): prog-id=10 op=UNLOAD
+type=BPF msg=audit(1764726191.161:238): prog-id=41 op=LOAD
+type=BPF msg=audit(1764726191.161:239): prog-id=42 op=LOAD
+type=BPF msg=audit(1764726191.162:240): prog-id=8 op=UNLOAD
+type=BPF msg=audit(1764726191.162:241): prog-id=9 op=UNLOAD
+type=BPF msg=audit(1764726191.163:242): prog-id=43 op=LOAD
+type=BPF msg=audit(1764726191.163:243): prog-id=15 op=UNLOAD
+type=BPF msg=audit(1764726191.164:244): prog-id=44 op=LOAD
+type=BPF msg=audit(1764726191.164:245): prog-id=26 op=UNLOAD
+type=BPF msg=audit(1764726191.165:246): prog-id=45 op=LOAD
+type=BPF msg=audit(1764726191.165:247): prog-id=46 op=LOAD
+type=BPF msg=audit(1764726191.165:248): prog-id=27 op=UNLOAD
+type=BPF msg=audit(1764726191.165:249): prog-id=28 op=UNLOAD
+type=BPF msg=audit(1764726191.167:250): prog-id=47 op=LOAD
+type=BPF msg=audit(1764726191.167:251): prog-id=18 op=UNLOAD
+type=BPF msg=audit(1764726191.171:252): prog-id=48 op=LOAD
+type=BPF msg=audit(1764726191.171:253): prog-id=19 op=UNLOAD
+type=BPF msg=audit(1764726191.171:254): prog-id=49 op=LOAD
+type=BPF msg=audit(1764726191.171:255): prog-id=50 op=LOAD
+type=BPF msg=audit(1764726191.171:256): prog-id=20 op=UNLOAD
+type=BPF msg=audit(1764726191.171:257): prog-id=21 op=UNLOAD
+type=BPF msg=audit(1764726191.172:258): prog-id=51 op=LOAD
+type=BPF msg=audit(1764726191.173:259): prog-id=16 op=UNLOAD
+type=SERVICE_START msg=audit(1764726191.253:260): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726191.316:261): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=unattended-upgrades comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726191.327:262): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=openvpn comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=AVC msg=audit(1764726191.392:263): apparmor="DENIED" operation="capable" class="cap" profile="/usr/sbin/cupsd" pid=1201 comm="cupsd" capability=12  capname="net_admin"
+type=SYSCALL msg=audit(1764726191.392:263): arch=c000003e syscall=54 success=no exit=-1 a0=a a1=1 a2=20 a3=7ffec9e3a734 items=0 ppid=1 pid=1201 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="cupsd" exe="/usr/sbin/cupsd" subj=/usr/sbin/cupsd key=(null)
+type=PROCTITLE msg=audit(1764726191.392:263): proctitle=2F7573722F7362696E2F6375707364002D6C
+type=SERVICE_START msg=audit(1764726191.394:264): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cups comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726191.488:265): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager-wait-online comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726194.525:266): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=dmesg comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726200.337:267): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726202.243:268): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764725982.756:269): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=e2scrub_all comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764725982.756:270): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=e2scrub_all comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764725988.284:271): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764725993.668:272): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-fsckd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764725996.294:273): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764725996.325:274): prog-id=35 op=UNLOAD
+type=BPF msg=audit(1764725996.325:275): prog-id=34 op=UNLOAD
+type=BPF msg=audit(1764725996.325:276): prog-id=33 op=UNLOAD
+type=SERVICE_STOP msg=audit(1764726009.643:277): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-timedated comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726009.651:278): prog-id=46 op=UNLOAD
+type=BPF msg=audit(1764726009.651:279): prog-id=45 op=UNLOAD
+type=BPF msg=audit(1764726009.651:280): prog-id=44 op=UNLOAD
+type=SERVICE_START msg=audit(1764726084.068:281): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-networkd-wait-online comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+type=SERVICE_START msg=audit(1764726084.093:282): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cups-browsed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.113:283): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=blk-availability comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.119:284): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=cron comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.167:285): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-user-sessions comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.214:286): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=plymouth-quit-wait comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.249:287): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=kerneloops comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.263:288): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=setvtrgb comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.331:289): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=gdm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.500:290): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=apport comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SYSTEM_RUNLEVEL msg=audit(1764726084.528:291): pid=1290 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='old-level=N new-level=5 comm="systemd-update-utmp" exe="/usr/lib/systemd/systemd-update-utmp" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726084.534:292): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-update-utmp-runlevel comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726084.534:293): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-update-utmp-runlevel comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_AUTH msg=audit(1764726094.144:294): pid=1292 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=pam_permit acct="gdm" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=USER_ACCT msg=audit(1764726094.146:295): pid=1292 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="gdm" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=CRED_ACQ msg=audit(1764726094.149:296): pid=1292 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="gdm" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=SERVICE_START msg=audit(1764726094.212:297): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user-runtime-dir@124 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1764726094.231:298): pid=1300 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="gdm" exe="/usr/lib/systemd/systemd-executor" hostname=? addr=? terminal=? res=success'
+type=CRED_ACQ msg=audit(1764726094.233:299): pid=1300 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="gdm" exe="/usr/lib/systemd/systemd-executor" hostname=? addr=? terminal=? res=success'
+type=LOGIN msg=audit(1764726094.233:300): pid=1300 uid=0 subj=unconfined old-auid=4294967295 auid=124 tty=(none) old-ses=4294967295 ses=1 res=1
+type=SYSCALL msg=audit(1764726094.233:300): arch=c000003e syscall=1 success=yes exit=3 a0=7 a1=7ffd7e1fd970 a2=3 a3=0 items=0 ppid=1 pid=1300 auid=124 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="(systemd)" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726094.233:300): proctitle="(systemd)"
+type=USER_START msg=audit(1764726094.238:301): pid=1300 uid=0 auid=124 ses=1 subj=unconfined msg='op=PAM:session_open grantors=pam_selinux,pam_selinux,pam_loginuid,pam_limits,pam_permit,pam_umask,pam_unix,pam_keyinit,pam_systemd acct="gdm" exe="/usr/lib/systemd/systemd-executor" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726094.538:302): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user@124 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_START msg=audit(1764726094.542:303): pid=1292 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_systemd acct="gdm" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=SERVICE_START msg=audit(1764726094.656:304): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=rtkit-daemon comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726095.764:305): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=colord comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726096.211:306): prog-id=52 op=LOAD
+type=BPF msg=audit(1764726096.211:307): prog-id=53 op=LOAD
+type=BPF msg=audit(1764726096.211:308): prog-id=54 op=LOAD
+type=SERVICE_START msg=audit(1764726096.278:309): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-localed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726096.352:310): prog-id=55 op=LOAD
+type=BPF msg=audit(1764726096.352:311): prog-id=56 op=LOAD
+type=SERVICE_START msg=audit(1764726096.438:312): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726096.499:313): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=upower comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726096.594:314): prog-id=57 op=LOAD
+type=BPF msg=audit(1764726096.594:315): prog-id=58 op=LOAD
+type=BPF msg=audit(1764726096.594:316): prog-id=59 op=LOAD
+type=SERVICE_START msg=audit(1764726096.694:317): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726097.047:318): prog-id=60 op=LOAD
+type=SERVICE_START msg=audit(1764726097.176:319): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726097.238:320): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=geoclue comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_AUTH msg=audit(1764726110.101:321): pid=1758 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=USER_AUTH msg=audit(1764726123.010:322): pid=1764 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=SERVICE_STOP msg=audit(1764726127.107:323): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fprintd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726127.116:324): prog-id=60 op=UNLOAD
+type=SERVICE_STOP msg=audit(1764726127.212:325): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-localed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726127.241:326): prog-id=54 op=UNLOAD
+type=BPF msg=audit(1764726127.241:327): prog-id=53 op=UNLOAD
+type=BPF msg=audit(1764726127.241:328): prog-id=52 op=UNLOAD
+type=SERVICE_STOP msg=audit(1764726127.241:329): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726127.286:330): prog-id=59 op=UNLOAD
+type=BPF msg=audit(1764726127.286:331): prog-id=58 op=UNLOAD
+type=BPF msg=audit(1764726127.286:332): prog-id=57 op=UNLOAD
+type=SERVICE_STOP msg=audit(1764726157.132:333): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=geoclue comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726265.445:334): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=whoopsie comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726265.474:335): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=whoopsie comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726265.574:336): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=update-notifier-download comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726265.574:337): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=update-notifier-download comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726279.627:338): prog-id=61 op=LOAD
+type=BPF msg=audit(1764726279.627:339): prog-id=62 op=LOAD
+type=BPF msg=audit(1764726279.627:340): prog-id=63 op=LOAD
+type=SERVICE_START msg=audit(1764726279.713:341): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-timedated comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726296.167:342): prog-id=64 op=LOAD
+type=BPF msg=audit(1764726296.167:343): prog-id=29 op=UNLOAD
+type=BPF msg=audit(1764726296.168:344): prog-id=65 op=LOAD
+type=BPF msg=audit(1764726296.168:345): prog-id=66 op=LOAD
+type=BPF msg=audit(1764726296.168:346): prog-id=30 op=UNLOAD
+type=BPF msg=audit(1764726296.168:347): prog-id=31 op=UNLOAD
+type=BPF msg=audit(1764726296.171:348): prog-id=67 op=LOAD
+type=BPF msg=audit(1764726296.171:349): prog-id=32 op=UNLOAD
+type=BPF msg=audit(1764726296.177:350): prog-id=68 op=LOAD
+type=BPF msg=audit(1764726296.177:351): prog-id=36 op=UNLOAD
+type=BPF msg=audit(1764726296.178:352): prog-id=69 op=LOAD
+type=BPF msg=audit(1764726296.178:353): prog-id=70 op=LOAD
+type=BPF msg=audit(1764726296.178:354): prog-id=37 op=UNLOAD
+type=BPF msg=audit(1764726296.178:355): prog-id=38 op=UNLOAD
+type=BPF msg=audit(1764726296.186:356): prog-id=71 op=LOAD
+type=BPF msg=audit(1764726296.186:357): prog-id=39 op=UNLOAD
+type=BPF msg=audit(1764726296.188:358): prog-id=72 op=LOAD
+type=BPF msg=audit(1764726296.188:359): prog-id=40 op=UNLOAD
+type=BPF msg=audit(1764726296.191:360): prog-id=73 op=LOAD
+type=BPF msg=audit(1764726296.191:361): prog-id=74 op=LOAD
+type=BPF msg=audit(1764726296.191:362): prog-id=41 op=UNLOAD
+type=BPF msg=audit(1764726296.191:363): prog-id=42 op=UNLOAD
+type=BPF msg=audit(1764726296.192:364): prog-id=75 op=LOAD
+type=BPF msg=audit(1764726296.192:365): prog-id=43 op=UNLOAD
+type=BPF msg=audit(1764726296.193:366): prog-id=76 op=LOAD
+type=BPF msg=audit(1764726296.193:367): prog-id=61 op=UNLOAD
+type=BPF msg=audit(1764726296.194:368): prog-id=77 op=LOAD
+type=BPF msg=audit(1764726296.194:369): prog-id=78 op=LOAD
+type=BPF msg=audit(1764726296.194:370): prog-id=62 op=UNLOAD
+type=BPF msg=audit(1764726296.194:371): prog-id=63 op=UNLOAD
+type=BPF msg=audit(1764726296.196:372): prog-id=79 op=LOAD
+type=BPF msg=audit(1764726296.196:373): prog-id=47 op=UNLOAD
+type=BPF msg=audit(1764726296.198:374): prog-id=80 op=LOAD
+type=BPF msg=audit(1764726296.198:375): prog-id=81 op=LOAD
+type=BPF msg=audit(1764726296.198:376): prog-id=55 op=UNLOAD
+type=BPF msg=audit(1764726296.198:377): prog-id=56 op=UNLOAD
+type=BPF msg=audit(1764726296.202:378): prog-id=82 op=LOAD
+type=BPF msg=audit(1764726296.202:379): prog-id=48 op=UNLOAD
+type=BPF msg=audit(1764726296.203:380): prog-id=83 op=LOAD
+type=BPF msg=audit(1764726296.203:381): prog-id=84 op=LOAD
+type=BPF msg=audit(1764726296.203:382): prog-id=49 op=UNLOAD
+type=BPF msg=audit(1764726296.203:383): prog-id=50 op=UNLOAD
+type=BPF msg=audit(1764726296.205:384): prog-id=85 op=LOAD
+type=BPF msg=audit(1764726296.205:385): prog-id=51 op=UNLOAD
+type=AVC msg=audit(1764726297.007:386): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/25577/usr/lib/snapd/snap-confine" pid=1976 comm="apparmor_parser"
+type=AVC msg=audit(1764726297.007:386): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/25577/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1976 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726297.007:386): arch=c000003e syscall=1 success=yes exit=109842 a0=6 a1=74995e9ab010 a2=1ad12 a3=0 items=0 ppid=1975 pid=1976 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726297.007:386): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D2D7175
+type=AVC msg=audit(1764726297.803:387): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.firefox" pid=1978 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726297.803:387): arch=c000003e syscall=1 success=yes exit=292241 a0=6 a1=5bbf544d2540 a2=47591 a3=0 items=0 ppid=1977 pid=1978 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726297.803:387): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726298.398:388): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.firefox" pid=1979 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726298.398:388): arch=c000003e syscall=1 success=yes exit=403665 a0=6 a1=5bbf54797770 a2=628d1 a3=0 items=0 ppid=1977 pid=1979 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726298.398:388): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726298.681:389): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.configure" pid=1982 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726298.681:389): arch=c000003e syscall=1 success=yes exit=166161 a0=6 a1=5bbf5460f450 a2=28911 a3=0 items=0 ppid=1977 pid=1982 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726298.681:389): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726298.870:390): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.disconnect-plug-host-hunspell" pid=1983 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726298.870:390): arch=c000003e syscall=1 success=yes exit=93481 a0=6 a1=5bbf54697370 a2=16d29 a3=0 items=0 ppid=1977 pid=1983 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726298.870:390): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726299.127:391): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.install" pid=1984 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726299.127:391): arch=c000003e syscall=1 success=yes exit=92921 a0=6 a1=5bbf546974d0 a2=16af9 a3=0 items=0 ppid=1977 pid=1984 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726299.127:391): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726299.207:392): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.geckodriver" pid=1981 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726299.207:392): arch=c000003e syscall=1 success=yes exit=403673 a0=6 a1=5bbf55a2a970 a2=628d9 a3=0 items=0 ppid=1977 pid=1981 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726299.207:392): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726299.290:393): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.post-refresh" pid=1985 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726299.290:393): arch=c000003e syscall=1 success=yes exit=93345 a0=6 a1=5bbf5488f890 a2=16ca1 a3=0 items=0 ppid=1977 pid=1985 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726299.290:393): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726299.632:394): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/25577/usr/lib/snapd/snap-confine" pid=1988 comm="apparmor_parser"
+type=AVC msg=audit(1764726299.632:394): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/25577/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1988 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726299.632:394): arch=c000003e syscall=1 success=yes exit=109842 a0=6 a1=773447757010 a2=1ad12 a3=0 items=0 ppid=1987 pid=1988 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726299.632:394): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D2D7175
+type=AVC msg=audit(1764726300.569:395): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.firefox" pid=1990 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726300.569:395): arch=c000003e syscall=1 success=yes exit=292241 a0=6 a1=5d16505377e0 a2=47591 a3=0 items=0 ppid=1989 pid=1990 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726300.569:395): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=USER_ACCT msg=audit(1764726301.156:396): pid=1993 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1764726301.158:397): pid=1993 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1764726301.158:398): pid=1993 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=2 res=1
+type=SYSCALL msg=audit(1764726301.158:398): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffd2d65e620 a2=1 a3=0 items=0 ppid=1262 pid=1993 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=2 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726301.158:398): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1764726301.159:399): pid=1993 uid=0 auid=0 ses=2 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1764726301.161:400): pid=1994 uid=0 auid=0 ses=2 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1764726301.166:401): pid=1993 uid=0 auid=0 ses=2 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1764726301.166:402): pid=1993 uid=0 auid=0 ses=2 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=AVC msg=audit(1764726301.324:403): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.firefox" pid=1991 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726301.324:403): arch=c000003e syscall=1 success=yes exit=406793 a0=6 a1=5d1651502600 a2=63509 a3=0 items=0 ppid=1989 pid=1991 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726301.324:403): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726302.051:404): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.geckodriver" pid=1992 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726302.051:404): arch=c000003e syscall=1 success=yes exit=406841 a0=6 a1=5d1650394f60 a2=63539 a3=0 items=0 ppid=1989 pid=1992 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726302.051:404): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726302.069:405): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.firefox.hook.disconnect-plug-host-hunspell" pid=1998 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726302.069:405): arch=c000003e syscall=1 success=yes exit=93481 a0=6 a1=76c9f82cf010 a2=16d29 a3=0 items=0 ppid=1996 pid=1998 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726302.069:405): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726302.070:406): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.firefox.hook.configure" pid=1997 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726302.070:406): arch=c000003e syscall=1 success=yes exit=166161 a0=6 a1=76c9f82af010 a2=28911 a3=0 items=0 ppid=1996 pid=1997 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726302.070:406): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726302.074:407): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.firefox.hook.install" pid=1999 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726302.074:407): arch=c000003e syscall=1 success=yes exit=92921 a0=6 a1=76c9f82cf010 a2=16af9 a3=0 items=0 ppid=1996 pid=1999 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726302.074:407): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=AVC msg=audit(1764726302.076:408): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.firefox.hook.post-refresh" pid=2000 comm="apparmor_parser"
+type=SYSCALL msg=audit(1764726302.076:408): arch=c000003e syscall=1 success=yes exit=93345 a0=6 a1=76c9f82cf010 a2=16ca1 a3=0 items=0 ppid=1996 pid=2000 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="apparmor_parser" exe="/usr/sbin/apparmor_parser" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726302.076:408): proctitle=2F7573722F7362696E2F61707061726D6F725F706172736572002D2D706F6C6963792D6665617475726573002F6574632F61707061726D6F722E642F6162692F332E30002D2D7265706C616365002D2D77726974652D6361636865002D2D63616368652D6C6F633D2F7661722F63616368652F61707061726D6F72002D6A32
+type=SERVICE_STOP msg=audit(1764726309.747:409): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-timedated comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726309.755:410): prog-id=78 op=UNLOAD
+type=BPF msg=audit(1764726309.755:411): prog-id=77 op=UNLOAD
+type=BPF msg=audit(1764726309.755:412): prog-id=76 op=UNLOAD
+type=USER_AUTH msg=audit(1764726311.642:413): pid=1779 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=USER_AUTH msg=audit(1764726334.705:414): pid=2062 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=SERVICE_STOP msg=audit(1764726402.114:415): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_AUTH msg=audit(1764726423.541:416): pid=2068 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=USER_AUTH msg=audit(1764726428.571:417): pid=2077 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=USER_AUTH msg=audit(1764726441.740:418): pid=2085 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=USER_AUTH msg=audit(1764726447.429:419): pid=2091 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=USER_AUTH msg=audit(1764726457.491:420): pid=2097 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=failed'
+type=USER_AUTH msg=audit(1764726466.653:421): pid=2104 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=pam_succeed_if,pam_permit,pam_cap,pam_gnome_keyring acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=USER_ACCT msg=audit(1764726466.655:422): pid=2104 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=CRED_ACQ msg=audit(1764726466.659:423): pid=2104 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap,pam_gnome_keyring acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=LOGIN msg=audit(1764726466.671:424): pid=2104 uid=0 subj=unconfined old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=3 res=1
+type=SYSCALL msg=audit(1764726466.671:424): arch=c000003e syscall=1 success=yes exit=4 a0=9 a1=7fff7b3425b0 a2=4 a3=0 items=0 ppid=1280 pid=2104 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=3 comm="gdm-session-wor" exe="/usr/libexec/gdm-session-worker" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726466.671:424): proctitle=67646D2D73657373696F6E2D776F726B6572205B70616D2F67646D2D70617373776F72645D
+type=SERVICE_START msg=audit(1764726466.704:425): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user-runtime-dir@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1764726466.722:426): pid=2112 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/lib/systemd/systemd-executor" hostname=? addr=? terminal=? res=success'
+type=CRED_ACQ msg=audit(1764726466.723:427): pid=2112 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="admin1" exe="/usr/lib/systemd/systemd-executor" hostname=? addr=? terminal=? res=success'
+type=LOGIN msg=audit(1764726466.724:428): pid=2112 uid=0 subj=unconfined old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=4 res=1
+type=SYSCALL msg=audit(1764726466.724:428): arch=c000003e syscall=1 success=yes exit=4 a0=7 a1=7ffd82a44be0 a2=4 a3=0 items=0 ppid=1 pid=2112 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4 comm="(systemd)" exe="/usr/lib/systemd/systemd-executor" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726466.724:428): proctitle="(systemd)"
+type=USER_START msg=audit(1764726466.727:429): pid=2112 uid=0 auid=1000 ses=4 subj=unconfined msg='op=PAM:session_open grantors=pam_selinux,pam_selinux,pam_loginuid,pam_limits,pam_permit,pam_umask,pam_unix,pam_keyinit,pam_systemd acct="admin1" exe="/usr/lib/systemd/systemd-executor" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726466.956:430): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user@1000 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_START msg=audit(1764726467.018:431): pid=2104 uid=0 auid=1000 ses=3 subj=unconfined msg='op=PAM:session_open grantors=pam_selinux,pam_loginuid,pam_selinux,pam_keyinit,pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_systemd,pam_gnome_keyring acct="admin1" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty2 res=success'
+type=SERVICE_START msg=audit(1764726468.486:432): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726468.660:433): prog-id=86 op=LOAD
+type=BPF msg=audit(1764726468.660:434): prog-id=87 op=LOAD
+type=BPF msg=audit(1764726468.660:435): prog-id=88 op=LOAD
+type=SERVICE_START msg=audit(1764726468.760:436): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764726469.396:437): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=geoclue comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_END msg=audit(1764726470.020:438): pid=1292 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:session_close grantors=pam_keyinit,pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_systemd acct="gdm" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=CRED_DISP msg=audit(1764726470.020:439): pid=1292 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="gdm" exe="/usr/libexec/gdm-session-worker" hostname=ubuntu addr=? terminal=/dev/tty1 res=success'
+type=BPF msg=audit(1764726470.120:440): prog-id=89 op=LOAD
+type=BPF msg=audit(1764726470.120:441): prog-id=90 op=LOAD
+type=BPF msg=audit(1764726470.120:442): prog-id=91 op=LOAD
+type=SERVICE_START msg=audit(1764726470.238:443): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-localed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726480.430:444): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user@124 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726480.455:445): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user-runtime-dir@124 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726500.183:446): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-hostnamed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726500.209:447): prog-id=88 op=UNLOAD
+type=BPF msg=audit(1764726500.209:448): prog-id=87 op=UNLOAD
+type=BPF msg=audit(1764726500.209:449): prog-id=86 op=UNLOAD
+type=SERVICE_STOP msg=audit(1764726500.284:450): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-localed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726500.315:451): prog-id=91 op=UNLOAD
+type=BPF msg=audit(1764726500.315:452): prog-id=90 op=UNLOAD
+type=BPF msg=audit(1764726500.315:453): prog-id=89 op=UNLOAD
+type=SERVICE_STOP msg=audit(1764726530.105:454): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=geoclue comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726538.915:455): prog-id=92 op=LOAD
+type=SYSCALL msg=audit(1764726538.915:455): arch=c000003e syscall=321 success=yes exit=9 a0=5 a1=7ffeeb2fe660 a2=90 a3=0 items=0 ppid=2302 pid=3022 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="snap-confine" exe="/usr/lib/snapd/snap-confine" subj=/usr/lib/snapd/snap-confine key=(null)
+type=PROCTITLE msg=audit(1764726538.915:455): proctitle=2F7573722F6C69622F736E6170642F736E61702D636F6E66696E65002D2D6261736500636F7265323200736E61702E66697265666F782E66697265666F78002F7573722F6C69622F736E6170642F736E61702D657865630066697265666F782E66697265666F78
+type=BPF msg=audit(1764726540.677:456): prog-id=93 op=LOAD
+type=BPF msg=audit(1764726540.678:457): prog-id=94 op=LOAD
+type=BPF msg=audit(1764726540.678:458): prog-id=95 op=LOAD
+type=SERVICE_START msg=audit(1764726540.740:459): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-timedated comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=AVC msg=audit(1764726543.447:460): apparmor="DENIED" operation="open" class="file" profile="snap.firefox.firefox" name="/proc/pressure/memory" pid=3022 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+type=SYSCALL msg=audit(1764726543.447:460): arch=c000003e syscall=257 success=no exit=-13 a0=ffffff9c a1=77cd2211956a a2=0 a3=0 items=1 ppid=2302 pid=3022 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4 comm="firefox" exe="/snap/firefox/7423/usr/lib/firefox/firefox" subj=snap.firefox.firefox key=(null)
+type=CWD msg=audit(1764726543.447:460): cwd="/home/admin1"
+type=PATH msg=audit(1764726543.447:460): item=0 name="/proc/pressure/memory" inode=4026532065 dev=00:18 mode=0100666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1764726543.447:460): proctitle=2F7573722F6C69622F736E6170642F736E61702D636F6E66696E65002D2D6261736500636F7265323200736E61702E66697265666F782E66697265666F78002F7573722F6C69622F736E6170642F736E61702D657865630066697265666F782E66697265666F78
+type=SERVICE_STOP msg=audit(1764726570.778:461): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-timedated comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=BPF msg=audit(1764726570.786:462): prog-id=95 op=UNLOAD
+type=BPF msg=audit(1764726570.786:463): prog-id=94 op=UNLOAD
+type=BPF msg=audit(1764726570.786:464): prog-id=93 op=UNLOAD
+type=SERVICE_START msg=audit(1764726601.831:465): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726601.831:466): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726774.113:467): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=packagekit comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726789.440:468): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=anacron comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SYSCALL msg=audit(1764726866.679:469): arch=c000003e syscall=257 success=yes exit=7 a0=5 a1=56bbadfb6c90 a2=2a0000 a3=0 items=1 ppid=1 pid=4255 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemd-tmpfile" exe="/usr/bin/systemd-tmpfiles" subj=unconfined key="auth_logs"
+type=CWD msg=audit(1764726866.679:469): cwd="/"
+type=PATH msg=audit(1764726866.679:469): item=0 name="auth.log" inode=1314617 dev=fc:00 mode=0100640 ouid=103 ogid=4 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1764726866.679:469): proctitle=73797374656D642D746D7066696C6573002D2D636C65616E
+type=SYSCALL msg=audit(1764726866.679:470): arch=c000003e syscall=257 success=yes exit=8 a0=ffffff9c a1=7ffe3bf91aa0 a2=280100 a3=0 items=1 ppid=1 pid=4255 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemd-tmpfile" exe="/usr/bin/systemd-tmpfiles" subj=unconfined key="auth_logs"
+type=CWD msg=audit(1764726866.679:470): cwd="/"
+type=PATH msg=audit(1764726866.679:470): item=0 name="/proc/self/fd/7" inode=1314617 dev=fc:00 mode=0100640 ouid=103 ogid=4 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1764726866.679:470): proctitle=73797374656D642D746D7066696C6573002D2D636C65616E
+type=SERVICE_START msg=audit(1764726866.684:471): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764726866.684:472): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1764726901.174:473): pid=4267 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1764726901.174:474): pid=4267 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1764726901.175:475): pid=4267 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=5 res=1
+type=SYSCALL msg=audit(1764726901.175:475): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffd2d65e620 a2=1 a3=0 items=0 ppid=1262 pid=4267 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=5 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764726901.175:475): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1764726901.175:476): pid=4267 uid=0 auid=0 ses=5 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1764726901.177:477): pid=4268 uid=0 auid=0 ses=5 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1764726901.180:478): pid=4267 uid=0 auid=0 ses=5 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1764726901.180:479): pid=4267 uid=0 auid=0 ses=5 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=SERVICE_START msg=audit(1764727201.515:480): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764727201.515:481): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1764727501.186:482): pid=4565 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1764727501.187:483): pid=4565 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1764727501.187:484): pid=4565 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=6 res=1
+type=SYSCALL msg=audit(1764727501.187:484): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffd2d65e620 a2=1 a3=0 items=0 ppid=1262 pid=4565 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=6 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764727501.187:484): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1764727501.187:485): pid=4565 uid=0 auid=0 ses=6 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1764727501.189:486): pid=4566 uid=0 auid=0 ses=6 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1764727501.192:487): pid=4565 uid=0 auid=0 ses=6 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1764727501.192:488): pid=4565 uid=0 auid=0 ses=6 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=SERVICE_START msg=audit(1764729019.976:489): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764729019.976:490): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764729020.246:491): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fstrim comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764729020.246:492): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fstrim comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764728820.969:493): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=apt-daily-upgrade comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764728820.969:494): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=apt-daily-upgrade comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764729025.472:495): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764729025.472:496): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=sysstat-collect comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764729114.582:497): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fwupd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_START msg=audit(1764729116.385:498): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fwupd-refresh comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=SERVICE_STOP msg=audit(1764729116.385:499): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=fwupd-refresh comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+type=USER_ACCT msg=audit(1764729301.031:500): pid=4976 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_ACQ msg=audit(1764729301.032:501): pid=4976 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=LOGIN msg=audit(1764729301.032:502): pid=4976 uid=0 subj=unconfined old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=7 res=1
+type=SYSCALL msg=audit(1764729301.032:502): arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffd2d65e620 a2=1 a3=0 items=0 ppid=1262 pid=4976 auid=0 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=7 comm="cron" exe="/usr/sbin/cron" subj=unconfined key=(null)
+type=PROCTITLE msg=audit(1764729301.032:502): proctitle=2F7573722F7362696E2F43524F4E002D66002D50
+type=USER_START msg=audit(1764729301.033:503): pid=4976 uid=0 auid=0 ses=7 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_REFR msg=audit(1764729301.035:504): pid=4977 uid=0 auid=0 ses=7 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=CRED_DISP msg=audit(1764729301.038:505): pid=4976 uid=0 auid=0 ses=7 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_END msg=audit(1764729301.038:506): pid=4976 uid=0 auid=0 ses=7 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_env,pam_env,pam_permit,pam_umask,pam_unix,pam_limits acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+type=USER_AUTH msg=audit(1764729375.132:507): pid=4998 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:authentication grantors=? acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=failed'
+type=USER_AUTH msg=audit(1764729380.576:508): pid=4998 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:authentication grantors=pam_permit,pam_cap acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1764729380.577:509): pid=4998 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1764729380.577:510): pid=4998 uid=1000 auid=1000 ses=4 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=6370202F7661722F6C6F672F61756469742F61756469742E6C6F67202F686F6D652F61646D696E312F616E7369626C652D6175646974642D6465706C6F792F61756469742E6C6F67 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1764729380.578:511): pid=4998 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1764729380.579:512): pid=4998 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1764729380.598:513): pid=4998 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1764729380.598:514): pid=4998 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1764729380.610:515): pid=5005 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1764729380.611:516): pid=5005 uid=1000 auid=1000 ses=4 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=63686D6F6420363434202F686F6D652F61646D696E312F616E7369626C652D6175646974642D6465706C6F792F61756469742E6C6F67 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1764729380.612:517): pid=5005 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1764729380.612:518): pid=5005 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_END msg=audit(1764729380.616:519): pid=5005 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:session_close grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=CRED_DISP msg=audit(1764729380.616:520): pid=5005 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:setcred grantors=pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_ACCT msg=audit(1764729389.383:521): pid=5008 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:accounting grantors=pam_permit,pam_localuser acct="admin1" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_CMD msg=audit(1764729389.383:522): pid=5008 uid=1000 auid=1000 ses=4 subj=unconfined msg='cwd="/home/admin1/ansible-auditd-deploy" cmd=6370202F7661722F6C6F672F61756469742F61756469742E6C6F67202F686F6D652F61646D696E312F616E7369626C652D6175646974642D6465706C6F792F61756469742E6C6F67 exe="/usr/bin/sudo" terminal=pts/0 res=success'
+type=CRED_REFR msg=audit(1764729389.384:523): pid=5008 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:setcred grantors=pam_permit,pam_cap acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+type=USER_START msg=audit(1764729389.385:524): pid=5008 uid=1000 auid=1000 ses=4 subj=unconfined msg='op=PAM:session_open grantors=pam_limits,pam_env,pam_env,pam_permit,pam_umask,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'

@@ -1,13 +1,13 @@
-name: Install and configure auditd
-hosts: localhost
-become: yes
+---
+- name: Install and configure auditd
+  hosts: localhost
+  become: yes
 
-tasks:
-
-  -name: Install auditd
-  apt:
-    name: auditd
-     state: present
+  tasks:
+    - name: Install auditd
+      apt:
+        name: auditd
+        state: present
         update_cache: yes
 
     - name: Ensure auditd service is enabled and running
