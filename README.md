@@ -17,7 +17,7 @@ This repository contains an Ansible playbook designed to deploy a hardened audit
 | Required Packages | git, ansible, auditd, python3 |
 | Access | SSH key-based access to GitHub |
 
-Visual Setup
+## Visual setup below:
      +-----------------------------+
      |         GitHub Repo         |
      |     (auditd playbook)       |
